@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachin-developer</title>
+    <style>
+        body {
+            background-color: rgb(29, 3, 54);
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: purple;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+
+        }
+        main hr{
+            border: 0;
+            background: rgb(137, 200, 229);
+            height: 1.2px;
+            margin: 44px 84px;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+              
+
+        }
+        .leftsection .btn{
+            padding: 12px; 
+            background: #1e2167;
+            color: white;
+            border: 2px solid white ;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+       
+    
+
+
+        .rightsection {
+
+            font-size: 3rem;
+
+        }
+
+        .rightsection img {
+            width: 80%;
+
+        }
+
+        .purple {
+            color: blueviolet;
+
+
+        }
+
+        nav ul li a:hover {
+            color: hsl(0, 86%, 75%);
+            font-size: 1.5rem;
+        }
+
+        #element {
+            color: blue;
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+            height:80vh;
+
+        }
+         
+        
+        .secondsection h1{
+            font-size: 25px;
+            margin-top: 2%;
+        }
+        
+        .secondsection.vertical{
+            height: 93px;
+            width: 103px;
+            background-color: rgb(131, 16, 16);
+            margin: 0 93px;
+        }
+        .image-top{
+            width: 23px;
+
+        }
+        .vertical-title{
+            position:relative;
+           
+            color: gray;
+            width: 150px;
+            font-size: 20px;
+       }
+          
+
+        
+        .vertical-desc{
+            position:relative;
+          padding: 10px;
+             color: rgb(243, 10, 10);
+             width: 150px;
+             font-size: 20px;
+        }
+        footer{
+            background-color: blueviolet;
+            color:white;
+            padding: 100px;
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Sachin's portpolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="web/home.html">HOME</a></li>
+                    <li><a href="web/certificate.html">CERTIFICATES</a></li>
+                    <li><a href="web/services.html">SERVICES</a></li>
+                    <li><a href="web/project.html">PROJECTS</a></li>
+                    <li><a href="web/contact.html">CONTACT US</a></li>
+
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi ,My Name is <span class="purple">Sachin.</span>
+                <div>I am a passionate </div>
+
+                
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn">download resume
+                    </button>
+                </div>
+
+            </div>
+            <div class="rightsection">
+                <img src="web/bg.jpg" alt="" />
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-grey">What i have done so far<br></span>
+            <h1>my learnings</h1>
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title">
+                        
+                    </div><div class="vertical-desc">1.HTML developer</div>
+                    <div class="vertical-desc">2.CSS developer</div>
+                    <div class="vertical-desc">3.javascript programmer</div>
+                    <div class="vertical-desc">4.pyhton programmer</div>
+                    <div class="vertical-desc">5.C-programmer</div>
+                    <div class="vertical-desc">6.sql programmer</div>
+                    <div class="vertical-desc">7.php developerr</div>
+                    
+                </div>
+            
+               
+            </div>
+            
+        </section>
+    
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['web Developer', 'Fullstack developer', 'Expert in presentation'],
+            typeSpeed: 50,
+        });
+    </script>
+    <footer>
+        <p>&copy rights preserved ,Sachin's portpolio</p>
+    </footer>
+</body>
+
+</html>
